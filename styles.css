@@ -7,8 +7,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #008000;
+    text-align: center;
+    margin-block: 12px;
+}
+
 body{
     background-color: rgb(232, 238, 238);
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
