@@ -1,79 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(232, 238, 238);
+}
+
+.container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin-top: 20px;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+.input-container{
+    width: 100%;
+    max-width: 500px;
     text-align: center;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-#taskInput {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-#addTaskButton {
-    padding: 8px 15px;
+.input-container input{
     border: none;
-    background-color: #5cb85c;
-    color: white;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
     border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"]{
+    width: 70%;
+}
+
+.input-container input[type="button"]{
+    background-color: #3da33d;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
     cursor: pointer;
+    padding: 12px 24px;
 }
 
-#addTaskButton:hover {
-    background-color: #4cae4c;
+.input-container input[type="button"]:hover{
+    background-color: #60b160;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+ul{
+    width: 70%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
 }
 
-li {
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.125px solid #a19f9f;
+    padding: 6px 12px;
+    background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    transition: background-color 0.5s;
 }
 
-li button {
+ul li:hover{
+    background-color: #cbcaca;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
     border: none;
-    background-color: #d9534f;
-    color: white;
-    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 8px;
 }
 
-li button:hover {
-    background-color: #c9302c;
+.deleteBtn{
+    color: #ff0000;
+}
+
+.editBtn{
+    color: #008000;
 }
